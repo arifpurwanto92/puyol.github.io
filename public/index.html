@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap -->
+    <link href="./plugins/Bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- Datatables -->
+    <link rel="stylesheet" href="./plugins/DataTables/datatables.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="px-3 py-2 text-bg-dark">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a href="/"
+                        class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                            <use xlink:href="#bootstrap"></use>
+                        </svg>
+                    </a>
+
+                    <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                        <li>
+                            <a href="#" class="nav-link text-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                    class="bi bi-speedometer d-block mx-auto mb-1" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 2a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-1 0V2.5A.5.5 0 0 1 8 2zM3.732 3.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 8a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 7.31A.91.91 0 1 0 8.85 8.569l3.434-4.297a.389.389 0 0 0-.029-.518z" />
+                                    <path fill-rule="evenodd"
+                                        d="M6.664 15.889A8 8 0 1 1 9.336.11a8 8 0 0 1-2.672 15.78zm-4.665-4.283A11.945 11.945 0 0 1 8 10c2.186 0 4.236.585 6.001 1.606a7 7 0 1 0-12.002 0z" />
+                                </svg>
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                    class="bi bi-card-checklist d-block mx-auto mb-1" viewBox="0 0 16 16">
+                                    <path
+                                        d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
+                                    <path
+                                        d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z" />
+                                </svg>
+                                Orders
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                    class="bi bi-cash d-block mx-auto mb-1" viewBox="0 0 16 16">
+                                    <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+                                    <path
+                                        d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2H3z" />
+                                </svg>
+                                Purchase
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                    class="bi bi-truck d-block mx-auto mb-1" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                </svg>
+                                Delivery
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                    class="bi bi-tag d-block mx-auto mb-1" viewBox="0 0 16 16">
+                                    <path
+                                        d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z" />
+                                    <path
+                                        d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1zm0 5.586 7 7L13.586 9l-7-7H2v4.586z" />
+                                </svg>
+                                Product
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                    class="bi bi-stack d-block mx-auto mb-1" viewBox="0 0 16 16">
+                                    <path
+                                        d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.598.598 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.598.598 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.598.598 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535L7.733.063z" />
+                                    <path
+                                        d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.598.598 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.659z" />
+                                </svg>
+                                Stock
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container-fluid px-5 pt-3 border-bottom">
+        <!-- Breadcrumb Start -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                <li class="breadcrumb-item active" aria-current="page">Orders</li>
+            </ol>
+        </nav>
+    </main>
+    <main class="container my-4">
+        <div class="card shadow-lg">
+            <div class="card-header d-inline-flex justify-content-between align-items-center">
+                <div class="card-title mb-0">
+                    Orders
+                </div>
+                <div class="card-tools">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#AddOrderModal">
+                        Add Orders
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <table class="table table-striped table-hover" id="table1">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>No Order</th>
+                            <th>Tanggal Order</th>
+                            <th>Site</th>
+                            <th>Items</th>
+                            <th>Qty</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <!-- Modal -->
+    <div class="modal fade" id="AddOrderModal" tabindex="-1" aria-labelledby="AddOrderModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="AddOrderModalLabel">Add Order</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="post">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="txtSite" value="JMY01"
+                                        placeholder="Site Code" readonly disabled>
+                                    <label for="txtSite">Site</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <select class="form-select" id="cbProduct">
+                                        <option value="" data-name="">Open this product list</option>
+                                        <option value="1" data-name="Product 01">PROD01</option>
+                                        <option value="2" data-name="Product 02">PROD02</option>
+                                        <option value="3" data-name="Product 03">PROD03</option>
+                                    </select>
+                                    <label for="floatingSelect">Product Code</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-floating mb-3">
+                                    <input type="number" class="form-control" id="txtQty"
+                                        placeholder="0">
+                                    <label for="txtQty">Quantity</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="txtProductName"
+                                        placeholder="Product Name" disabled>
+                                    <label for="txtProductName">Product Name</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer d-flex justify-content-between">
+                    <div>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-primary" id="AddOrder">Add Another Product</button>
+                        <button type="button" class="btn btn-success bg-gradient" id="SaveOrder">Save Change</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./plugins/jQuery/jquery-3.6.0.min.js"></script>
+<script src="./plugins/Bootstrap/js/bootstrap.min.js"></script>
+<script src="./plugins/DataTables/datatables.min.js"></script>
+<script type="text/javascript">
+    var addState = false;
+    var formData = {};
+
+    function stateAwal() {
+        $("#cbProduct").val("");
+        $("#txtQty").val(0);
+        $("#txtProductName").val("");
+    }
+    function showData(d){
+        console.log(d);
+        let data = "<table class='table table-striped table-hover'>" +
+        "<tr>" +
+        "<th width='5%'>#</th>" +
+        "<th>Product Code</th>" +
+        "<th>Product Name</th>" +
+        "<th>Qty</th>" +
+        "</tr>";
+        d.details.forEach(e => {
+            data += "<tr>" +
+                "<td>" + e.id + "</td>" +
+                "<td>" + e.ProductCode + "</td>" +
+                "<td>" + e.ProductName + "</td>" +
+                "<td>" + e.Qty + "</td>" +
+                "</tr>";
+        });
+        data += "</table>"
+        return(data);
+    }
+
+    var datatable = $("#table1").DataTable({
+        ajax: "./demo-data-request.txt",
+        columns: [
+            {
+                className: 'dt-control',
+                orderable: false, 
+                data: null, 
+                defaultContent: ''
+            }, 
+            { data: 'OrderId' },
+            { data: 'OrderDate' },
+            { data: 'SiteOrder' },
+            { data: 'Items' }, 
+            { data: "Qty"}
+        ], 
+        order: [[1, 'asc']]
+    });
+
+    $("#table1 tbody").on("click", "td.dt-control", function () {
+        let tr = $(this).closest("tr");
+        let row = datatable.row(tr);
+        // console.log(datatable.data().length);
+        // console.log(row.data());
+
+        if(row.child.isShown()){
+            row.child.hide();
+            tr.removeClass('shown');
+        } else {
+            row.child(showData(row.data())).show();
+            tr.addClass('shown');
+        }
+    });
+
+    $("#AddOrderModal").on("shown.bs.modal", function(e) {
+       addState = true;
+       formData = {
+        site: $("#txtSite").val(),
+        item: 0,
+        qty: 0,
+        details: []
+       }
+    });
+
+    $("#AddOrderModal").on("hidden.bs.modal", function (e) {
+        addState = false;
+        formData = {};
+    });
+
+    $("#cbProduct").on("change", function(e) {
+        let prodName = $(this).find(":selected").attr("data-name");
+        $("#txtProductName").val(prodName);
+    });
+
+    $("#AddOrder").on("click", (e) => {
+        let index = formData.details.map(object => object.ProductCode).indexOf($("#cbProduct").val());
+        console.log(index);
+        if(index >= 0){
+            formData.details[index].Qty = parseInt($("#txtQty").val());
+        } else {
+            let details = {
+            id: formData.details.length + 1, 
+            ProductCode: $("#cbProduct").val(), 
+            ProductName: $("#txtProductName").val(), 
+            Qty: parseInt($("#txtQty").val())
+            }
+            formData.details.push(details);
+        }
+        formData.item = formData.details.length;
+        let sumQty = formData.details.reduce((prev, curr) => prev + curr.Qty, 0);
+        formData.qty = sumQty;
+        stateAwal();
+        console.log(formData);
+    });
+
+    $("#SaveOrder").on("click", function(e){
+
+    });
+</script>
+</html>
