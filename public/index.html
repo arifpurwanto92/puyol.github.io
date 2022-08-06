@@ -195,7 +195,7 @@
                     </div>
                     <div>
                         <button type="button" class="btn btn-primary" id="AddOrder">Add Another Product</button>
-                        <button type="button" class="btn btn-success bg-gradient" id="SaveOrder">Save Change</button>
+                        <button type="button" class="btn btn-success bg-gradient" id="SaveOrder" data-bs-dismiss="modal" aria-label="Close">Save Change</button>
                     </div>
                     
                 </div>
@@ -272,9 +272,11 @@
     $("#AddOrderModal").on("shown.bs.modal", function(e) {
        addState = true;
        formData = {
-        site: $("#txtSite").val(),
-        item: 0,
-        qty: 0,
+        OrderId: "Order/Demo/Agustus/2022",
+        OrderDate: new Date().toISOString().slice(0, 10),
+        SiteOrder: $("#txtSite").val(),
+        Items: 0,
+        Qty: 0,
         details: []
        }
     });
@@ -311,7 +313,9 @@
     });
 
     $("#SaveOrder").on("click", function(e){
-
+        $("#AddOrder").trigger("click");
+        datatable.row.add(formData);
+        datatable.draw();
     });
 </script>
 </html>
